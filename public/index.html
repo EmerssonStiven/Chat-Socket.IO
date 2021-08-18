@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Socket</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="titulo">Chat Socket.IO</h1>
+    <div class="fondo">
+      <div class="caja-datos">
+        <div class="nombreUsuario">
+          <div class="enlinea"></div>
+          <p id="username"></p>
+        </div>
+      </div>
+      <div class="caja-general">
+        <div class="chat-container1">
+          <div id="chat-window" class="chat-container">
+            <div id="output"></div>
+            <div id="actions"></div>
+          </div>
+          <div class="areaenviar">
+            <input
+              type="text"
+              id="message"
+              placeholder="Message"
+              class="areamensaje"
+            />
+            <button id="send" class="btn-enviar">Enviar</button>
+          </div>
+        </div>
+
+        <div class="conectados">
+          <h1>Usuarios en línea</h1>
+          <div id="usuarios"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+  </body>
+</html>
